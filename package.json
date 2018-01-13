@@ -1,8 +1,7 @@
 {
   "name": "tea-cli",
   "version": "1.0.0",
-  "description": "zhw2590582's scaffolding tool",
-  "main": "index.js",
+  "description": "A simple scaffolding tool",
   "scripts": {
     "release": "npm publish",
     "coveralls": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
@@ -27,6 +26,7 @@
     "babel-preset-env": "^1.6.1",
     "chalk": "^2.3.0",
     "coveralls": "^3.0.0",
+    "download-git-repo": "^1.0.2",
     "execa": "^0.9.0",
     "inquirer": "^5.0.0",
     "jest": "^22.0.5",
