@@ -14,9 +14,9 @@
     "type": "git",
     "url": "git+https://github.com/zhw2590582/tea-cli.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["scaffolding", "boilerplate", "generator", "template", "tea-cli"],
+  "authors": ["Harvey Zack <laozhaochaguan@hotmail.com>"],
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/zhw2590582/tea-cli/issues"
   },
