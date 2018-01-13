@@ -1,2 +1,2 @@
-# teahouse-cli
-zhw2590582's scaffolding tool
+# tea-cli
+> 🍵 A simple scaffolding tool
