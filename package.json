@@ -1,0 +1,28 @@
+{
+  "name": "tea-cli",
+  "version": "1.0.0",
+  "description": "zhw2590582's scaffolding tool",
+  "main": "index.js",
+  "scripts": {
+    "release": "npm publish",
+    "coveralls": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhw2590582/tea-cli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhw2590582/tea-cli/issues"
+  },
+  "homepage": "https://github.com/zhw2590582/tea-cli#readme",
+  "devDependencies": {
+    "babel-jest": "^22.0.4",
+    "babel-preset-env": "^1.6.1",
+    "coveralls": "^3.0.0",
+    "jest": "^22.0.5"
+  }
+}
