@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "release": "npm publish",
-    "coveralls": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+    "coveralls":
+      "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
     "test": "jest"
   },
   "bin": {
-		"tea": "bin/tea.js"
-	},
+    "tea": "bin/tea.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zhw2590582/tea-cli.git"
