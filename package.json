@@ -2,6 +2,7 @@
   "name": "tea-cli",
   "version": "1.0.0",
   "description": "A simple scaffolding tool",
+  "preferGlobal": true,
   "scripts": {
     "release": "npm publish",
     "coveralls": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
@@ -14,8 +15,16 @@
     "type": "git",
     "url": "git+https://github.com/zhw2590582/tea-cli.git"
   },
-  "keywords": ["scaffolding", "boilerplate", "generator", "template", "tea-cli"],
-  "authors": ["Harvey Zack <laozhaochaguan@hotmail.com>"],
+  "keywords": [
+    "scaffolding",
+    "boilerplate",
+    "generator",
+    "template",
+    "tea-cli"
+  ],
+  "authors": [
+    "Harvey Zack <laozhaochaguan@hotmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/zhw2590582/tea-cli/issues"
@@ -27,21 +36,35 @@
   "devDependencies": {
     "babel-jest": "^22.0.4",
     "babel-preset-env": "^1.6.1",
-    "chalk": "^2.3.0",
     "coveralls": "^3.0.0",
     "cross-env": "^5.1.3",
-    "del": "^3.0.0",
-    "download-git-repo": "^1.0.2",
     "eslint": "^4.15.0",
     "eslint-config-zhw2590582": "^1.1.1",
     "execa": "^0.9.0",
-    "inquirer": "^5.0.0",
     "jest": "^22.0.5",
     "lerna": "^2.7.0",
+    "prettier": "^1.10.2"
+  },
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "consolidate": "^0.15.0",
+    "del": "^3.0.0",
+    "download-git-repo": "^1.0.2",
+    "fs-extra": "^5.0.0",
+    "handlebars": "^4.0.11",
+    "inquirer": "^5.0.0",
     "meow": "^4.0.0",
+    "metalsmith": "^2.3.0",
     "mkdir": "^0.0.2",
+    "multimatch": "^2.1.0",
     "ora": "^1.3.0",
-    "prettier": "^1.10.2",
-    "rimraf": "^2.6.2"
+    "request": "^2.83.0",
+    "rimraf": "^2.6.2",
+    "semver": "^5.4.1",
+    "update-notifier": "^2.3.0",
+    "validate-npm-package-name": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=6.0.0"
   }
 }
