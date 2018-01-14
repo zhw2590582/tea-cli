@@ -21,6 +21,10 @@ const cli = meow(
 `,
   {
     flags: {
+      clone: {
+        type: 'boolean',
+        alias: 'c'
+      },
       version: {
         type: 'boolean',
         alias: 'v'
@@ -35,5 +39,6 @@ const cli = meow(
 
 run({
   templateUrl: cli.input[0],
-  projectName: cli.input[1]
+  projectName: cli.input[1],
+  clone: cli.flags.clone || false
 });
