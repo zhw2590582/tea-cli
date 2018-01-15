@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 const meow = require('meow');
+const logger = require('../lib/logger');
 const run = require('../lib/run');
 
 const cli = meow(
@@ -21,6 +22,10 @@ const cli = meow(
 `,
   {
     flags: {
+      offline: {
+        type: 'boolean',
+        alias: 'o'
+      },
       clone: {
         type: 'boolean',
         alias: 'c'
@@ -37,8 +42,16 @@ const cli = meow(
   }
 );
 
+const templateUrl = cli.input[0];
+const projectName = cli.input[1];
+
+if (!templateUrl || !projectName) {
+  cli.showHelp();
+}
+
 run({
-  templateUrl: cli.input[0],
-  projectName: cli.input[1],
-  clone: cli.flags.clone || false
+  templateUrl: templateUrl,
+  projectName: projectName,
+  clone: cli.flags.clone || false,
+  offline: cli.flags.offline || false
 });
