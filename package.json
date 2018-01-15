@@ -1,7 +1,7 @@
 {
   "name": "tea-cli",
   "version": "1.0.0",
-  "description": "A simple scaffolding tool",
+  "description": "A simple scaffolding tool inspired by vue-cli",
   "preferGlobal": true,
   "scripts": {
     "release": "npm publish",
