@@ -13,6 +13,12 @@ const cli = meow(
     Use local templates
       $ tea <~/fs/path/to-custom-template> <project-name>
     
+    Use git clone
+      $ tea -c
+
+    Use offline mode
+      $ tea -o      
+
     Show current version
       $ tea -v
 
