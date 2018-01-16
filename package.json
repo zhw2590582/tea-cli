@@ -72,8 +72,5 @@
     "update-notifier": "^2.3.0",
     "user-home": "^2.0.0",
     "validate-npm-package-name": "^3.0.0"
-  },
-  "engines": {
-    "node": ">=6.0.0"
   }
 }
